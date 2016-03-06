@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.cs160.joleary.represent.Main2Activity"
+    android:background="#dbdbdb">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Location"
+        android:id="@+id/locText"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#dbdbdb"
+        android:layout_below="@+id/locText"
+        android:id="@+id/tableLayout"
+        android:layout_marginTop="10dp">
+
+        <RelativeLayout
+            android:orientation="horizontal"
+            android:layout_width="363dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/locText"
+            android:layout_marginTop="0dp"
+            android:weightSum="1"
+            android:background="#ffffff"
+            android:id="@+id/rep1"
+            android:onClick="onClick1">
+
+            <ImageView
+                android:layout_width="79dp"
+                android:layout_height="98dp"
+                android:id="@+id/rep1Image"
+                android:background="@drawable/boxer"
+                android:layout_weight="0.19"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="0dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="0dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Barbara Boxer - Democrat"
+                android:id="@+id/rep1Name"
+                android:textColor="#000000"
+                android:textSize="16dp"
+                android:layout_marginLeft="158dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Twitter - “The GOP should listen to Reagan appointee Justice O’Connor who served on the Court for nearly 25 years. #DoYourJob “"
+                android:id="@+id/rep1Twitter"
+                android:layout_below="@+id/rep1Name"
+                android:layout_alignStart="@+id/rep1Name" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="boxer.senate.gov"
+                android:id="@+id/rep1Website"
+                android:layout_toEndOf="@+id/rep1Image"
+                android:layout_alignParentEnd="true"
+                android:layout_alignBottom="@+id/rep1Image"
+                android:layout_marginLeft="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Email"
+                android:id="@+id/rep1Email"
+                android:layout_alignEnd="@+id/rep1Twitter"
+                android:layout_alignBottom="@+id/rep1Website"
+                android:layout_marginRight="10dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:orientation="horizontal"
+            android:layout_width="363dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rep1"
+            android:weightSum="1"
+            android:background="#ffffff"
+            android:id="@+id/rep2"
+            android:layout_marginTop="10dp"
+            android:onClick="onClick2">
+
+            <ImageView
+                android:layout_width="79dp"
+                android:layout_height="98dp"
+                android:id="@+id/rep2Image"
+                android:background="@drawable/boxer"
+                android:layout_weight="0.19"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="0dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="0dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Not Barbara Boxer - Dems"
+                android:id="@+id/rep2Name"
+                android:textColor="#000000"
+                android:textSize="16dp"
+                android:layout_marginLeft="158dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Twitter - “The GOP should listen to Reagan appointee Justice O’Connor who served on the Court for nearly 25 years. #DoYourJob “"
+                android:id="@+id/rep2Twitter"
+                android:layout_below="@+id/rep2Name"
+                android:layout_alignStart="@+id/rep2Name" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="boxer.senate.gov"
+                android:id="@+id/rep2Website"
+                android:layout_toEndOf="@+id/rep2Image"
+                android:layout_alignParentEnd="true"
+                android:layout_alignBottom="@+id/rep2Image"
+                android:layout_marginLeft="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Email"
+                android:id="@+id/rep2Email"
+                android:layout_alignEnd="@+id/rep2Twitter"
+                android:layout_alignBottom="@+id/rep2Website"
+                android:layout_marginRight="10dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:orientation="horizontal"
+            android:layout_width="363dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rep2"
+            android:weightSum="1"
+            android:background="#ffffff"
+            android:id="@+id/rep3"
+            android:layout_marginTop="10dp"
+            android:onClick="onClick3">
+
+            <ImageView
+                android:layout_width="79dp"
+                android:layout_height="98dp"
+                android:id="@+id/rep3Image"
+                android:background="@drawable/boxer"
+                android:layout_weight="0.19"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="0dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="0dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Alternate Barbara Boxer - D"
+                android:id="@+id/rep3Name"
+                android:textColor="#000000"
+                android:textSize="16dp"
+                android:layout_marginLeft="158dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Twitter - “The GOP should listen to Reagan appointee Justice O’Connor who served on the Court for nearly 25 years. #DoYourJob “"
+                android:id="@+id/rep3Twitter"
+                android:layout_below="@+id/rep3Name"
+                android:layout_alignStart="@+id/rep3Name" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="boxer.senate.gov"
+                android:id="@+id/rep3Website"
+                android:layout_toEndOf="@+id/rep3Image"
+                android:layout_alignParentEnd="true"
+                android:layout_alignBottom="@+id/rep3Image"
+                android:layout_marginLeft="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Email"
+                android:id="@+id/rep3Email"
+                android:layout_alignEnd="@+id/rep3Twitter"
+                android:layout_alignBottom="@+id/rep3Website"
+                android:layout_marginRight="10dp" />
+        </RelativeLayout>
+
+    </TableLayout>
+
+</RelativeLayout>
